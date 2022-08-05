@@ -679,6 +679,10 @@ a {
     margin: auto auto auto auto;
 }
 
+blockquote {
+    font-size: 18px;
+}
+
 p, label {
     font-size: 16px;
 }
@@ -710,6 +714,7 @@ p, label {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    font-weight: 900;
 }
 
 h3 {
@@ -739,7 +744,7 @@ h4 {
 }
 
 .white {
-    color: #000000!important;
+    color: #FFFFFF!important;
 }
 
 .portfolio-thumb {
@@ -756,7 +761,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(165, 147, 99, 0.9);
     padding: 40px 40px 40px 40px;
 }
 
@@ -825,7 +830,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
