@@ -1,3 +1,6 @@
+.border {
+    border: 1px solid black;
+}
 body {
     margin: 0;
     padding: 0;
@@ -45,7 +48,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 40px;
 }
 
 .bloc-md {
@@ -659,6 +662,7 @@ a {
 
 .container {
     max-width: 1000px;
+    width: 100%;
 }
 
 .hero-bloc-text {
@@ -688,13 +692,15 @@ p, label {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 1000px;
     margin: auto auto auto auto;
 }
 
-.h1 {
-    font-size: 24px;
+h1 {
+    font-size: 26px;
+    font-weight: 800;
     font-family: "Open Sans";
+    color: #333333!important;
 }
 
 .cta-hero {
@@ -708,7 +714,12 @@ p, label {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.social li {
+    list-style-type: none;
 }
 
 h2 {
@@ -728,10 +739,6 @@ h3 {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
-}
-
-h1 {
-    color: #333333!important;
 }
 
 h4 {
@@ -833,6 +840,22 @@ h4 {
     background-image: url("img/image-de-presentation.jpg");
 }
 
+
+#bloc-7 {
+    margin: auto;
+    width: 90%;
+}
+.contact-details {
+    padding-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.google-maps {
+    width: 100%;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -856,13 +879,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -880,10 +903,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -892,8 +911,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
