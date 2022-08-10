@@ -338,11 +338,6 @@ a:hover {
     text-align: inherit;
 }
 
-.nav > li a:hover,
-.nav > li a:focus {
-    background: transparent;
-}
-
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
@@ -379,6 +374,7 @@ a:hover {
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
+        background: transparent;
     }
     .nav-invert .site-navigation {
         left: 0;
@@ -718,7 +714,7 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
-.social li {
+.social li {    
     list-style-type: none;
 }
 
