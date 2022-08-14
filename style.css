@@ -1,6 +1,32 @@
+html {
+    scroll-padding-top: 100px;
+}
 .border {
     border: 1px solid black;
 }
+
+#bloc-0 {
+    height: fit-content;
+    width: 100%;
+}
+#bloc-1-hero {
+    margin-top: 102px;
+}
+.nav-pills {
+    --bs-nav-pills-link-active-bg: rgba(0, 0, 0, 0.2);
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#back-to-top {  
+    position: fixed;
+    bottom: 20px;      
+    right: 20px;
+    z-index: 9999;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -692,6 +718,10 @@ p, label {
     margin: auto auto auto auto;
 }
 
+.logo-title {
+    display: flex;
+    justify-content: center;
+}
 h1 {
     font-size: 26px;
     font-weight: 800;
@@ -848,9 +878,6 @@ h4 {
     flex-direction: column;
     justify-content: space-between;
 }
-.map {
-    width: 100%;
-}
 
 @media (max-width: 1024px) {
     .bloc {
@@ -947,7 +974,6 @@ h4 {
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
         text-align: left;
         padding-left: 15px;
         width: 100%;
