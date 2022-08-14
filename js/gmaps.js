@@ -1,3 +1,4 @@
+// Gmaps
 // Initialize and add the map
 function initMap() {
     // The location of laPanthere
@@ -18,6 +19,7 @@ function initMap() {
   
   window.initMap = initMap;
 
+  //Scroll to top button
   //Get the button
   let mybutton = document.getElementById("back-to-top");
 

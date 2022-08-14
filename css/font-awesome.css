@@ -670,7 +670,9 @@
 }
 
 .fa-chevron-up:before {
-    content: "\f077"
+    content: "\f077";
+    color: white;
+    font-size: x-large;
 }
 
 .fa-chevron-down:before {
