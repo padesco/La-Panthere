@@ -57,9 +57,9 @@
 	</div>
 </header>
 <!-- bloc-0 END -->
-<div data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-root-margin="0px 0px -50%" data-bs-smooth-scroll="true" tabindex="0">
+<div data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-root-margin="0px 0px -50%" data-bs-smooth-scroll="true">
 <!-- bloc-1-presentation -->
-<main class="bloc bg-banniere d-bloc" id="bloc-1-hero" aria-label="main">
+<main class="bloc bgc-dark-slate-blue bg-banniere d-bloc" id="bloc-1-hero" aria-label="main">
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
@@ -93,9 +93,9 @@
 				<div class="text-center">
 					<span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
-				<h3 class="mg-md text-center">
+				<legend class="mg-md text-center">
 					Web design
-				</h3>
+				</legend>
 				<p class="text-center ">
 					Que vous ayez un site web qui a besoin d'un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.
 				</p>
@@ -104,9 +104,9 @@
 				<div class="text-center">
 					<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
-				<h3 class="mg-md text-center">
+				<legend class="mg-md text-center">
 					Stratégie
-				</h3>
+				</legend>
 				<p class="text-center ">
 					Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
 				</p>
@@ -115,9 +115,9 @@
 				<div class="text-center">
 					<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
-				<h3 class="mg-md text-center">
+				<legend class="mg-md text-center">
 					Illustrations
-				</h3>
+				</legend>
 				<p class="text-center ">
 					Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.
 				</p>
@@ -227,7 +227,7 @@
 <!-- bloc-4-portfolio END -->
 
 <!-- bloc-5-cta -->
-<section class="bloc bg-banniere d-bloc" id="bloc-5-cta" aria-label="contactez-nous">
+<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc" id="bloc-5-cta" aria-label="contactez-nous">
 	<div class="container bloc-lg">
 		<div class="row">
 			<h2 class="mg-md text-center tc-white">
@@ -240,32 +240,32 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<h3>Formulaire pour nous contacter</h3>
-					<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" aria-label="formulaire de contact">
+					<form id="form_1" aria-label="formulaire de contact">
 						<div class="form-group">
 							<label for="name">
 								Nom
 							</label>
-							<input id="name" name="name" class="form-control" type="text" required />
+							<input id="name" name="name" class="form-control" type="text" minlength="2" required />
 						</div>
 						<div class="form-group">
 							<label for="email">
 								Adresse email
 							</label>
-							<input id="email" name="email" class="form-control" type="email" required />
+							<input id="email" name="email" class="form-control" type="email" autocomplete="email" required />
 						</div>
 						<div class="form-group">
 							<label for="input_504">
 								Comment nous avez-vous connu ?
 							</label>
-							<input id="input_504" name="input_504" class="form-control" type="text" required />
+							<input id="input_504" name="input_504" class="form-control" type="text" required minlength="2" />
 						</div>
 						<div class="form-group">
 							<label for="message">
 								Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 							</label>
-							<textarea id="message" name="message" class="form-control" rows="4" cols="50" type="text" required></textarea>
+							<textarea id="message" name="message" class="form-control" rows="4" cols="50" type="text"></textarea>
 						</div> 
-						<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+						<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" value="Envoyer">
 							Envoyer
 						</button>
 					</form>
@@ -283,7 +283,7 @@
 <!-- bloc-5-cta END -->
 </div>
 <!-- ScrollToTop Button -->
-<a id="back-to-top" href="#" class="btn btn-d btn-lg" role="button"><i class="fa fa-chevron-up"></i></a>
+<a id="back-to-top" class="btn btn-d btn-lg" role="button"><i class="fa fa-chevron-up"></i></a>
 <!-- ScrollToTop Button END-->
 
 <!-- Footer - bloc-8 -->
