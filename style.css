@@ -1064,7 +1064,7 @@ p, label {
 }
 
 .contact-details {
-    padding-top: 15px;
+    padding: 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
