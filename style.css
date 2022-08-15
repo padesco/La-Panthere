@@ -1025,7 +1025,7 @@ h4 {
 }
 
 #bloc-1-hero {
-    margin-top: 102px;
+    margin-top: 80px;
 }
 
 .nav-pills {
@@ -1042,6 +1042,7 @@ h4 {
     bottom: 20px;      
     right: 20px;
     z-index: 9999;
+    display: none;
 }
 
 input:valid{
@@ -1067,4 +1068,7 @@ p, label {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.article-portfolio {
+    margin: 40px 0;
 }
