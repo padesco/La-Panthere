@@ -303,7 +303,7 @@ a:hover {
 
 .navbar-brand img {
     max-height: 200px;
-    margin: 0 5px 0 0;
+    margin: -5px 5px 0 0;
     display: inline;
 }
 
@@ -1018,7 +1018,7 @@ h4 {
     }
 }
 
-//* Code ajouté *//
+/* Code ajouté */
 #bloc-0 {
     height: fit-content;
     width: 100%;
@@ -1046,11 +1046,11 @@ h4 {
 }
 
 input:valid{
-    box-shadow: 0 0 5px 1px lightgreen; //Ajout de l'ombre vert aux bordures dans les champ valides
+    box-shadow: 0 0 5px 1px lightgreen;
 }
 
 input:invalid{
-    box-shadow: 0 0 5px 1px rgb(247, 98, 98); //Ajout de l'ombre rouge aux bordures dans les champs invalides
+    box-shadow: 0 0 5px 1px rgb(247, 98, 98);
 }
 
 p, label {

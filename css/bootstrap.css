@@ -9,7 +9,7 @@
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
 }
 
 body {
@@ -1428,7 +1428,7 @@ figure {
 
 img {
     vertical-align: middle;
-    margin: auto
+    margin: auto;
 }
 
 .carousel-inner>.item>a>img,
@@ -1987,24 +1987,6 @@ pre code {
     margin-left: auto
 }
 
-@media (min-width:768px) {
-    .container {
-        width: 750px
-    }
-}
-
-@media (min-width:992px) {
-    .container {
-        width: 970px
-    }
-}
-
-@media (min-width:1200px) {
-    .container {
-        width: 1170px
-    }
-}
-
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
@@ -2013,10 +1995,8 @@ pre code {
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
-    width: 100%;
     margin: auto;
+    width: 100%;
 }
 
 .col-lg-1,
@@ -4290,7 +4270,7 @@ tbody.collapse.in {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px dashed;
-    border-top: 4px solid;
+    border-top: 4px solid\9;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent
 }
@@ -5065,7 +5045,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar {
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
     border: 1px solid transparent
 }
 
@@ -5124,7 +5103,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     max-height: 220px
 }
 
-@media (max-width:480px) and (orientation:landscape) {
+@media (max-device-width:480px) and (orientation:landscape) {
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 200px
@@ -7682,7 +7661,7 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
+    background-color: #000;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px
