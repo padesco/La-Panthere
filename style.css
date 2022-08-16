@@ -316,8 +316,6 @@ a:hover {
 }
 
 .navbar .nav {
-    padding-top: 2px;
-    margin-right: -16px;
     float: right;
     z-index: 1;
 }
@@ -327,26 +325,16 @@ a:hover {
 
 .nav > li {
     float: left;
-    margin-top: 4px;
     font-size: 16px;
+    width: 90px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
 }
 
-.navbar-toggle {
-    margin: 10px 10px 0 0;
-    border: 0px;
-}
-
-.navbar-toggle:hover {
-    background: transparent!important;
-}
-
-.navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, .5);
-    width: 26px;
+.navbar-toggler {
+    margin-right: 20px;
 }
 
 .nav-invert .navbar .nav {
@@ -529,6 +517,7 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
@@ -723,14 +712,21 @@ h4 {
 .white {
     color: #FFFFFF!important;
 }
-
-.portfolio-thumb {
-    margin-bottom: 24px;
-}
-
 .portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+    width: 100%;
+}
+.article-portfolio {
+    margin: 30px 0;
+}
+.portfolio-thumb {
+    max-width: 320px;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+}
+.img-responsive {
+    width: 100%;
+    height: auto;
 }
 
 .avatar {
@@ -829,7 +825,7 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -905,9 +901,7 @@ h4 {
         border-radius: 4px;
         width: 100%;
     }
-    .nav > li:hover {
-        background: rgba(0, 0, 0, .08);
-    }
+    
     .dropdown .dropdown a .caret {
         float: none;
         margin: 5px 0 0 10px!important;
@@ -1022,11 +1016,15 @@ h4 {
 }
 
 #bloc-1-hero {
-    margin-top: 80px;
+    margin-top: 65px;
 }
 
 .nav-pills {
     --bs-nav-pills-link-active-bg: rgba(0, 0, 0, 0.2);
+}
+.nav > li:hover {
+    background: rgba(0, 0, 0, .08);
+    border-radius: 6px;
 }
 
 #map {
@@ -1050,7 +1048,7 @@ input:invalid{
     box-shadow: 0 0 5px 1px rgb(247, 98, 98);
 }
 
-p, label {
+p, label, blockquote {
     font-size: 18px!important;
 } 
 
@@ -1065,7 +1063,5 @@ p, label {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.article-portfolio {
-    margin: 40px 0;
+    overflow-wrap: break-word;
 }
