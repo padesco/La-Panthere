@@ -432,10 +432,6 @@ nav .caret {
     margin-bottom: 40px;
 }
 
-.btn {
-    margin: 0 5px 5px 0;
-}
-
 .btn.pull-right {
     margin: 0 0 5px 5px;
 }
@@ -653,6 +649,8 @@ a {
 .logo-title {
     display: flex;
     justify-content: center;
+    font-weight: 900;
+    text-shadow:5px 5px 5px black;
 }
 h1 {
     font-size: 28px;
@@ -716,7 +714,7 @@ h4 {
     width: 100%;
 }
 .article-portfolio {
-    margin: 30px 0;
+    margin-top: 30px;
 }
 .portfolio-thumb {
     max-width: 320px;
@@ -746,11 +744,9 @@ h4 {
 .bgc-white {
     background-color: #FFFFFF;
 }
-
 .bgc-dark-slate-blue {
-    background-color: #364577;
+    background-color:#364577
 }
-
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
@@ -931,6 +927,7 @@ h4 {
     }
     .navbar-brand img {
         max-height: 40px;
+        width: 100%;
         width: auto;
     }
     .nav-invert .navbar-header {
@@ -1064,4 +1061,11 @@ p, label, blockquote {
     flex-direction: column;
     justify-content: space-between;
     overflow-wrap: break-word;
+}
+
+@media(max-width:370px){
+    .navbar-brand{width:60%}.navbar-brand img{width:100%}
+}
+@media(max-width:250px){
+    .navbar-brand{width:100%;margin:auto;}.navbar-toggler{width: 100%;margin:auto}
 }
