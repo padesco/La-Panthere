@@ -650,7 +650,6 @@ a {
     display: flex;
     justify-content: center;
     font-weight: 900;
-    text-shadow:5px 5px 5px black;
 }
 h1 {
     font-size: 28px;
@@ -1010,6 +1009,7 @@ h4 {
 #bloc-0 {
     height: fit-content;
     width: 100%;
+    z-index: 2;
 }
 
 #bloc-1-hero {
@@ -1068,4 +1068,8 @@ p, label, blockquote {
 }
 @media(max-width:250px){
     .navbar-brand{width:100%;margin:auto;}.navbar-toggler{width: 100%;margin:auto}
+}
+
+.shadow-title {
+    text-shadow: 5px 5px 5px black;
 }
