@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="./style-pure.css">
 	<link rel="preload" as="image" type="image/webp" href="./img/image-de-presentation.webp">
 	<link rel="preload" as="image" type="image/webp" href="./img/agence-la-panthere.webp">
-	<script type="module" src="./js/gmaps-min.js"></script>
+	<script type="module"  async src="./js/gmaps-min.js"></script>
 	
     <title>La Panthère - Agence de Web Design à Lyon</title>
   
@@ -62,10 +62,12 @@
 		</nav>
 	</div>
 </header>
+
 <!-- bloc-0 END -->
-<div data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-root-margin="0px 0px -50%" data-bs-smooth-scroll="true">
+<main data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-root-margin="0px 0px -50%" data-bs-smooth-scroll="true">
+
 <!-- bloc-1-presentation -->
-<main class="bloc bgc-dark-slate-blue bg-banniere d-bloc b-parallax" id="bloc-1-hero" aria-label="main">
+<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc b-parallax" id="bloc-1-hero" aria-label="main">
 	<div class="container bloc-lg">
 			<div class="text-center col-sm-12">
 					<img src="img/logo.png" class="" width="100" height="100" alt="Agence La Panthère, agence web lyon, création logo lyon" />
@@ -75,7 +77,7 @@
 				<a href="#bloc-5-cta" class="btn btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
 			</div>
 	</div>
-</main>
+</section>
 <!-- bloc-1-presentation END -->
 
 <!-- bloc-2-services -->
@@ -158,7 +160,7 @@
 		</div>
 		<div class="row mx-auto tight-width-whitespace portfolio-row">
 			<article class="col-sm-6 article-portfolio">
-				<a class="portfolio-thumb" href="#Carousel-1" data-bs-slide-to="0" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb" data-bs-toggle="modal" data-bs-target="#Modal">
+				<a class="portfolio-thumb" href="#carouselIndicators" data-bs-slide-to="0" data-lightbox="img/1.webp" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb" data-bs-toggle="modal" data-bs-target="#Modal">
 					<img src="img/1.webp" class="img-responsive img-thumbnail" width="320" height="320" alt="lyon web design logo agence web meilleure agence et refonte site web journal" />
 				</a>
 				<h3 class="mg-md text-center">
@@ -169,7 +171,7 @@
 				</p>
 			</article>
 			<article class="col-sm-6 article-portfolio">
-				<a class="portfolio-thumb" href="#Carousel-2" data-bs-slide-to="1" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb" data-bs-toggle="modal" data-bs-target="#Modal">
+				<a class="portfolio-thumb" href="#carouselIndicators" data-bs-slide-to="1" data-lightbox="img/2.webp" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb" data-bs-toggle="modal" data-bs-target="#Modal">
 					<img src="img/2.webp" class="img-responsive img-thumbnail" width="320" height="320" alt="lyon web design logo agence web meilleure agence, Création d'un site web pour photographes" />
 				</a>
 				<h3 class="mg-md text-center">
@@ -182,7 +184,7 @@
 		</div>
 		<div class="row mx-auto tight-width-whitespace portfolio-row">
 			<article class="col-sm-6 article-portfolio">
-				<a class="portfolio-thumb" href="#Carousel" data-bs-slide-to="2" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb" data-bs-toggle="modal" data-bs-target="#Modal">
+				<a class="portfolio-thumb" href="#carouselIndicators" data-bs-slide-to="2" data-lightbox="img/3.webp" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb" data-bs-toggle="modal" data-bs-target="#Modal">
 					<img src="img/3.webp" class="img-responsive img-thumbnail" width="320" height="320" alt="lyon web design logo agence web meilleure agence, Création d'un site web pour voyageur" />
 				</a>
 				<h3 class="mg-md text-center">
@@ -193,7 +195,7 @@
 				</p>
 			</article>
 			<article class="col-sm-6 article-portfolio">
-				<a class="portfolio-thumb" href="#Carousel" data-bs-slide-to="3" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb" data-bs-toggle="modal" data-bs-target="#Modal">
+				<a class="portfolio-thumb" href="#carouseIndicators" data-bs-slide-to="3" data-lightbox="img/4.webp" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb" data-bs-toggle="modal" data-bs-target="#Modal">
 					<img src="img/4.webp" class="img-responsive img-thumbnail" width="320" height="320" alt="lyon web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" />
 				</a>
 				<h3 class="mg-md text-center">
@@ -263,7 +265,6 @@
 	</div>
 </section>
 <!-- bloc-5-cta END -->
-</div><!-- end scrollspy -->
 
 <!-- Modal -->
 <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
@@ -274,21 +275,21 @@
 			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		</div>
 		<div class="modal-body">
-			<div id="Carousel" class="carousel slide" data-bs-ride="true">
+			<div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel" data-interval="false">
 				<div class="carousel-indicators">
-				  <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				  <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				  <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-				  <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
 				</div>
 				<div class="carousel-inner">
-				  <div class="carousel-item active" id="Carousel-1">
+				  <div class="carousel-item active">
 					<figure>
 						<figcaption>Refonte d'un site web pour un journal local</figcaption>
 						<img src="img/1.webp" class="d-block w-100" alt="lyon web design logo agence web meilleure agence et refonte site web journal">
 					</figure>
 				  </div>
-				  <div class="carousel-item" id="Carousel-2">
+				  <div class="carousel-item">
 					<figure>
 						<figcaption>Création d'un site web pour photographes</figcaption>
 						<img src="img/2.webp" class="d-block w-100" alt="lyon web design logo agence web meilleure agence, Création d'un site web pour photographes">
@@ -307,11 +308,11 @@
 					</figure>
 				  </div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
 				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				  <span class="visually-hidden">Previous</span>
 				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
 				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
 				  <span class="visually-hidden">Next</span>
 				</button>
@@ -321,10 +322,12 @@
 	</div>
 </div>
 
-
 <!-- ScrollToTop Button -->
 <a id="back-to-top" class="btn btn-d btn-lg" role="button" aria-label="back-to-top"><i class="fa fa-chevron-up"></i></a>
 <!-- ScrollToTop Button END-->
+
+<!-- end scrollspy -->
+</main>
 
 <!-- Footer - bloc-8 -->
 <footer class="bgc-atomic-tangerine d-bloc" id="bloc-8" aria-label="pied de page">
