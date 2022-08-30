@@ -1,1 +1,0 @@
-function initMap(){let a={lat:45.76968807047258,lng:4.830674599999999},b=new google.maps.Map(document.getElementById("map"),{streetViewControl:!1,zoom:15,center:a});new google.maps.Marker({position:a,map:b})}window.initMap=initMap
